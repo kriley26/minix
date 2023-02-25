@@ -426,3 +426,12 @@ int do_getrusage()
 	return sys_datacopy(SELF, (vir_bytes)&r_usage, who_e,
 		m_in.m_lc_pm_rusage.addr, (vir_bytes) sizeof(r_usage));
 }
+
+/*===========================================================================*
+ *				do_krsyscall				     *
+ *===========================================================================*/
+int do_krsyscall()
+{
+	printf("Keegan was here.");
+	return 1;
+}
